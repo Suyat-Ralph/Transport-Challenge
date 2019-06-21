@@ -3,6 +3,24 @@ from bs4 import BeautifulSoup
 from requests import get
 from requests.exceptions import RequestException
 from contextlib import closing
+import csv
+import numpy as np
+import pandas as pd
+
+
+def process_csv():
+    """
+    takes a csv file and processes it and returns it in a table format
+    :return:
+    """
+
+    # of format ("_____.csv", delimiter = "," , (["","",""] (Optional) -> names of columns ), )
+    article_read = pd.read_csv()
+    article_read[["", ""]] #indicate the name of the columns you want
+    #article_read.(column name) == "" #will return True or False or some shit
+
+
+
 
 
 def func() -> str:

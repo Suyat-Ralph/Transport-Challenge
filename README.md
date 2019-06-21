@@ -7,6 +7,7 @@ We're aiming to help personalize the car buying process through utilizing click-
 ### Technology
 * Node.JS backend
 * ReactJS frontend
+* Lots of Python and ML diagrams
 
 ### Next Steps
 

@@ -6,6 +6,9 @@ from contextlib import closing
 import csv
 import numpy as np
 import pandas as pd
+import flask
+import PIL
+
 
 
 def process_csv():

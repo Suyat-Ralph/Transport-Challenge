@@ -6,6 +6,9 @@ from contextlib import closing
 import csv
 import numpy as np
 import pandas as pd
+import flask
+import PIL
+
 
 
 def process_csv():
@@ -18,9 +21,17 @@ def process_csv():
     article_read = pd.read_csv()
     article_read[["", ""]] #indicate the name of the columns you want
     #article_read.(column name) == "" #will return True or False or some shit
+    #article_read.head() or .tail() or .sample(int) to get a number of rows
 
+    #Select the user_id, the country and the topic columns for the users who are from country_2! Print the first five rows only!
+    #   CODE: article_read[article_read.country == 'country_2'][['user_id', 'topic', 'country']].head()
 
-
+    #to also read csv
+    import csv
+    with open('winequality-red.csv', 'r') as f:
+        wines = list(csv.reader(f, delimiter=';'))
+    print(wines[:3])
+    np.array(wines)
 
 
 def func() -> str:

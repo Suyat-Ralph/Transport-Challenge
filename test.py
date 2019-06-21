@@ -18,7 +18,7 @@ def process_csv():
     """
 
     # of format ("_____.csv", delimiter = "," , (["","",""] (Optional) -> names of columns ), )
-    article_read = pd.read_csv()
+    article_read = pd.read_csv("FL_insurance_sample.csv", delimiter=",")
     article_read[["", ""]] #indicate the name of the columns you want
     #article_read.(column name) == "" #will return True or False or some shit
     #article_read.head() or .tail() or .sample(int) to get a number of rows

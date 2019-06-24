@@ -21,6 +21,6 @@ section#demo {
 }
 .card {
 	background: #fff;
-    box-shadow: 13px 13px 28px 2px rgba(0, 0, 0, 0.035);
+    box-shadow: 13px 13px 28px 2px rgba(0, 0, 0, 0.25);
     padding: 7px 15px;
 }

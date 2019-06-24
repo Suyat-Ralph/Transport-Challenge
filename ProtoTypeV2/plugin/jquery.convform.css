@@ -85,7 +85,7 @@ form.convFormDynamic {
     margin: 10px auto 15px;
     padding: 0 !important;
     position: relative;
-    box-shadow: 0 0 5px 5px rgba(222, 222, 222, 0.4);
+    box-shadow: 0 0 5px 5px rgba(222, 222, 222, 0.5);
 }
 
 form.convFormDynamic textarea.userInputDynamic {
@@ -217,11 +217,11 @@ div.conv-form-wrapper div.options:after {
 }
 div.conv-form-wrapper div.options div.option {
     padding: 7px 12px;
-    border: 1px solid rgba(6,153,184,0.3);
+    border: 1px solid rgba(177, 156, 217,0.3);
     display: inline-block;
     margin: 5px;
     background: #fff;
-    color: #06c5a6;
+    color: #b19cd9;
     cursor: pointer;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -259,7 +259,7 @@ div.conv-form-wrapper  div#messages div.message.to {
     border-top-left-radius: 0;
 }
 div.conv-form-wrapper div#messages div.message.from {
-    background: #06b79a;
+    background: #b19cd9;
     color: #fff;
     border-top-right-radius: 0;
 }
@@ -287,11 +287,11 @@ div.conv-form-wrapper div.options div.option:hover {
     background: #eeeeee;
 }
 div.conv-form-wrapper div.options div.option.selected {
-    background: #06b79a;
+    background: #b19cd9;
     color: #fff;
 }
 div.conv-form-wrapper div.options div.option.selected:hover {
-    background: #069c7f;
+    background: #a28ad2;
 }
 
 form.convFormDynamic button.submit {
@@ -299,7 +299,7 @@ form.convFormDynamic button.submit {
     border: none;
     float: left;
     margin: 5px;
-    color: #06c5a6;
+    color: #b19cd9;
     cursor: pointer;
     border-radius: 8px;
     font-size: 1.1rem;
@@ -312,12 +312,12 @@ form.convFormDynamic button.submit {
 
 
 form.convFormDynamic button.submit:hover {
-    background: #06b79a;
+    background: #b19cd9;
     color: #fff;
 }
 
 button.submit.glow {
-    box-shadow: 0 0 10px 5px rgba(6, 197, 166, 0.4);
+    box-shadow: 0 0 10px 5px rgba(177, 156, 217, 0.4);
 }
 .no-border {
     border: none !important;
@@ -339,14 +339,14 @@ span.clear {
 .spinLoader,
 .spinLoader:before,
 .spinLoader:after {
-    background: #06c5a6 !important;
+    background: #b19cd9 !important;
     -webkit-animation: spinLoaderChat 1s infinite ease-in-out;
     animation: spinLoaderChat 1s infinite ease-in-out;
     width: 1em;
     height: 4em;
 }
 .spinLoader {
-    color: #06c5a6 !important;
+    color: #b19cd9 !important;
     text-indent: -9999em;
     margin: 50% auto;
     position: relative;

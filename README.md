@@ -18,4 +18,4 @@ Hopefully this will go into production soon!
 
 ### Live Demo
 
-https://github.com/rdv-jpg/Transport-Challenge/blob/master/index.html
+https://github.com/rdv-jpg/Transport-Challenge/Prototype/index.html

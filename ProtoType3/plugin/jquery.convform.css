@@ -208,6 +208,7 @@ div.conv-form-wrapper div.options {
     position: absolute;
     bottom: 100%;
     width: 100%;
+    padding-bottom: 10px;
     transform: translateY(-5px);
 }
 div.conv-form-wrapper div.options:after {

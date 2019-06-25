@@ -12,6 +12,36 @@ function reset(stateWrapper,ready){
     window.location = window.location; 
     ready();
 }
+
+function yeetcar1(stateWrapper,ready){
+    window.open("https://www.subaru.ca/WebPage.aspx?WebSiteID=282&WebPageID=22413&Range=BRZ&ModelYear=2019");
+    window.location = window.location;
+    ready();
+}
+
+function yeetcar2(stateWrapper,ready){
+    window.open("https://www.subaru.ca/WebPage.aspx?WebSiteID=282&WebPageID=21832&Range=Ascent&ModelYear=2019");
+    window.location = window.location;
+    ready();
+}
+
+function yeetcar3(stateWrapper,ready){
+    window.open("https://www.subaru.ca/WebPage.aspx?WebSiteID=282&WebPageID=22118&Range=Impreza&ModelYear=2019");
+    window.location = window.location;
+    ready();
+}
+
+function yeetcar4(stateWrapper,ready){
+    window.open("https://www.subaru.ca/WebPage.aspx?WebSiteID=282&WebPageID=22261&Range=Forester&ModelYear=2019");
+    window.location = window.location;
+    ready();
+}
+
+function MLChoice(stateWrapper,ready){
+    window.open("https://i.kym-cdn.com/entries/icons/original/000/028/526/honklhonk.jpg");
+    window.location = window.location;
+    ready();
+}
 // Other typa Functions
 var rollbackTo = false;
 var originalState = false;

@@ -1,3 +1,4 @@
+//Call Back Functions
 function google(stateWrapper, ready) {
     window.open("https://google.com");
     ready();
@@ -6,6 +7,12 @@ function bing(stateWrapper, ready) {
     window.open("https://bing.com");
     ready();
 }
+
+function reset(stateWrapper,ready){
+    location.reload(); 
+    ready();
+}
+// Other typa Functions
 var rollbackTo = false;
 var originalState = false;
 function storeState(stateWrapper, ready) {

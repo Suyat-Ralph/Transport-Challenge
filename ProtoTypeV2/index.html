@@ -18,10 +18,21 @@
 							<div class="card no-border">
 								<div id="chat" class="conv-form-wrapper">
 									<form action="" method="GET" class="hidden">
-										<select data-conv-question="Hello! Welcome to FCA! Im Yung Blood, here to help you make your car purchase easy peasy! Do you need any help?" name="first-question">
+										<select name="intro" data-conv-question="Hello! Welcome to FCA! Im Yung Blood, here to help you make your car purchase easy peasy! Do you need any help?" name="first-question">
 											<option value="yes">Yes</option>
-											<option value="sure">No</option>
+											<option value="no">No</option>
 										</select>
+										<div data-conv-fork="intro">
+											<div data-conv-case="yes">
+												<input type="text" data-conv-question="Great! Lets get started!" data-no-answer="true">
+											</div>
+											<div data-conv-fork="intro">
+												<div data-conv-case="no">
+													<input type="text" data-conv-question="Thats ok, ill see you later!" data-no-answer="true">
+													<option value="reset" data-callback="reset"></option>
+												</div>
+											</div>
+										</div>
 										<input type="text" name="name" data-conv-question="Alright! First, tell me your full name, please.|Okay! Please, tell me your name first.">
 										<input type="text" data-conv-question="Howdy, {name}:0! It's a pleasure to meet you. (note that this question doesn't expect any answer)" data-no-answer="true">
 										<input type="text" data-conv-question="This plugin supports multi-select too. Let's see an example." data-no-answer="true">

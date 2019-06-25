@@ -11,6 +11,7 @@ We're aiming to help personalize the car buying process through utilizing click-
 * Node.JS backend
 * ReactJS frontend
 * Lots of Python and ML diagrams
+  * NLTK Library
 
 ### Next Steps
 

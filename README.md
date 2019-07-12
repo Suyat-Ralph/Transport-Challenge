@@ -19,4 +19,4 @@ Hopefully this will go into production soon!
 
 ### Live Demo
 
-https://github.com/rdv-jpg/Transport-Challenge/Prototype/index.html
+https://suyat-ralph.github.io/Transport-Challenge/ChatBot/index.html

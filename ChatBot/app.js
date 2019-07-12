@@ -9,7 +9,7 @@ function bing(stateWrapper, ready) {
 }
 
 function reset(stateWrapper,ready){
-    window.location = window.location; 
+    window.location = window.location;
     ready();
 }
 
@@ -38,7 +38,6 @@ function yeetcar4(stateWrapper,ready){
 }
 
 function MLChoice(stateWrapper,ready){
-    window.open("https://i.kym-cdn.com/entries/icons/original/000/028/526/honklhonk.jpg");
     ready();
 }
 // Other typa Functions

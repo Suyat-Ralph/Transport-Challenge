@@ -7,7 +7,6 @@ html, body {
 
 section#demo {
 	background: #fbfbfb;
-	background-image: url(/BG.png) !important;
     position: relative;
     padding: 0;
     min-height: 100vh;

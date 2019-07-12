@@ -38,6 +38,8 @@ function yeetcar4(stateWrapper,ready){
 }
 
 function MLChoice(stateWrapper,ready){
+    window.open("https://www.jeep.ca/en/wrangler");
+    window.location = window.location;
     ready();
 }
 // Other typa Functions

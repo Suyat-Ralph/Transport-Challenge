@@ -10,7 +10,6 @@ import flask
 import PIL
 
 
-
 def process_csv():
     """
     takes a csv file and processes it and returns it in a table format

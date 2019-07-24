@@ -20,6 +20,8 @@ def initial():
 
     #print(df.compute())
     df = df.groupby("Vehicle Model Name/Trim")["Configuration Complete"].sum().compute().nlargest(20)
+    plt.style.use('dark_background')
+    plt.xticks(fontsize = 5, rotation=90)
     plt.plot(df)
     plt.show()
 

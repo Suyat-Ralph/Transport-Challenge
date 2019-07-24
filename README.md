@@ -28,4 +28,4 @@ Hopefully this will go into production soon!
 
 ### Live Demo
 
-https://suyat-ralph.github.io/Transport-Challenge/ChatBot/index.html
+https://suyat-ralph.github.io/AutoBot/AutoBot/index.html

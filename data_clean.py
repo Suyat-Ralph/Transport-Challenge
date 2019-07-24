@@ -1,5 +1,6 @@
 import dask.dataframe as dd
-from glob import glob
+import matplotlib.pyplot as plt
+
 
 def initial():
     """
@@ -12,13 +13,16 @@ def initial():
     print(df.tail())
     mean_visit = df["Visit Number"].mean(axis=0).compute()
     # print(df.compute())
-    df = df[df["Page Name (c57) (prop57)"] != "jeep:us:"]
-    df = df[df["Page URL No Query String (c28) (prop28)"] != "https://www.jeep.com/hostc/cpov/vehicleSearch.do"]
-    df = df[df["Page URL No Query String (c28) (prop28)"] != "https://www.jeep.com/hostc/cpov/vehicleDetails.do"]
-    df = df[df["Page Type (v25) (evar25)"] != "homepage"]
+    df = df[df["Page Name"] != "jeep:us:"]
+    df = df[df["Page URL No Query String"] != "https://www.jeep.com/hostc/cpov/vehicleSearch.do"]
+    df = df[df["Page URL No Query String"] != "https://www.jeep.com/hostc/cpov/vehicleDetails.do"]
+    df = df[df["Page Type"] != "homepage"]
     # print(df.compute())
-    df.groupby("Page Type (v25) (evar25)")
-    print(df.compute())
+
+    #print(df.compute())
+    df = df.groupby("Vehicle Model Name/Trim")["Configuration Complete"].sum().compute().nlargest(20)
+    plt.plot(df)
+    plt.show()
     first = df[df["Visit Number"] <= mean_visit]
     second = df[df["Visit Number"] > mean_visit]
 

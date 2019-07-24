@@ -8,10 +8,19 @@ https://rdv-jpg.github.io/Transport-Challenge/
 We're aiming to help personalize the car buying process through utilizing click-stream data ML, and applying it via a chatbot!
 
 ### Technology
-* Node.JS backend
-* ReactJS frontend
-* Lots of Python and ML diagrams
-  * NLTK Library
+
+```
+HTML/CSS
+
+JavaScript
+- Node.js
+
+Python
+- Dask
+- NLTK
+
+AWS
+```
 
 ### Next Steps
 

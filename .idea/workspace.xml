@@ -4,13 +4,6 @@
     <list default="true" id="b550a9a0-3e74-44aa-a68a-7c0f0a6b3ed6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuckTeeBot/.idea/ChatBot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/.idea/ChatBot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuckTeeBot/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuckTeeBot/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuckTeeBot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuckTeeBot/ChatBot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/ChatBot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuckTeeBot/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuckTeeBot/sentence_tokenizer.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/Parser/sentence_tokenizer.pickle" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +17,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+              <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -38,16 +31,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/Transport-Challenge.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/Parser/.gitignore" />
       </list>
     </option>
   </component>
@@ -67,6 +51,16 @@
             <path>
               <item name="Transport-Challenge" type="b2602c69:ProjectViewProjectNode" />
               <item name="Transport-Challenge" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Transport-Challenge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Transport-Challenge" type="462c0819:PsiDirectoryNode" />
+              <item name="Parser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Transport-Challenge" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Transport-Challenge" type="462c0819:PsiDirectoryNode" />
+              <item name="react-app" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -142,10 +136,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Parser/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <caret line="3" column="5" lean-forward="true" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
         </state>
       </provider>
     </entry>

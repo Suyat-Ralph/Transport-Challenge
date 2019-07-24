@@ -1,4 +1,5 @@
 node_modules
 nlp/venv
 *.DS_Store
+*.idea
 Report.csv

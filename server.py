@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import os
 
-template_dir = os.path.abspath('/Users/shrrishi/Documents/Personal Projects/Transport-Challenge/AutoBot')   #Put abs path on your pc
+template_dir = os.path.abspath('AutoBot')   #Put abs path on your pc
 app = Flask(__name__, template_folder=template_dir,static_folder=template_dir)
 
 @app.route('/')

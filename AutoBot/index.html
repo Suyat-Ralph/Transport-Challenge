@@ -19,79 +19,13 @@
 						<div class="col-sm-6 col-sm-offset-3 col-xs-offset-0">
 							<div class="card no-border">
 								<div id="chat" class="conv-form-wrapper">
-									<form action="" method="GET" class="hidden">
-										<!-- Intro -->
-										<select name="intro" data-conv-question="Hello! Welcome to Jeep! I'm Jane, here to help you make your car purchase! Do you need any help?">
-											<option value="yes">Yes</option>
-											<option value="no">No</option>
-										</select>
+									<form class="hidden" method="get">
 
-										<!-- Fork Intro -->
-										<div data-conv-fork="intro">
-											<!-- Yes, Proceed -->
-											<div data-conv-case="yes">
-												<input type="text" data-conv-question="Great! Lets get started!" data-no-answer="true">
-											</div>
-											<!-- No, Reset page -->
-											<div data-conv-case="no">
-												<select name="goodby" data-conv-question="Alright, are you sure?">
-													<option value="reset" data-callback="reset">Yes</option>
-												</select>
-											</div>
-										</div>
-										<!-- Yes, continue, ask name -->
-										<input type="text" name="name" data-conv-question="Alright! First, tell me your full name, please.|Okay! Please, tell me your name first." data-pattern="^[a-zA-Z]">
-										<input type="text" data-conv-question="Hello, {name}! It's a pleasure to meet you." data-no-answer="true">
-										<!-- Consent to collect info -->
-										<select name="info-consent" data-conv-question="Im going to ask you a few questions to help me personalize your shopping experience! Is this ok?">
-											<option value="yes">Yes</option>
-											<option value="no">No</option>
-										</select>
-										<!-- Consent Fork -->
-										<div data-conv-fork="info-consent">
-											<!-- Yes, Proceed -->
-											<div data-conv-case="yes">
-												<input type="text" data-conv-question="Thank you!" data-no-answer="true">
-											</div>
-											<!-- No, Reset page -->
-											<div data-conv-case="no">
-												<select name="goodby2" data-conv-question="Thats ok, would you like me to reccomend a car anyway?">
-													<option value="yes">Yes</option>
-													<option value="no">No</option>
-												</select>
-												<!-- New for, push a car -->
-												<div data-conv-fork="goodby2">
-													<div data-conv-case="yes">
-														<select name="popular-choices" data-conv-question="Perfect, these cars are quite popular!">
-																<option value="yeetcar1" data-callback="yeetcar1">Brz(Coupe)</option>
-																<option value="yeetcar2" data-callback="yeetcar2">Ascent(Full size SUV)</option>
-																<option value="yeetcar3" data-callback="yeetcar3">Impreza(Sedan)</option>
-																<option value="yeetcar4" data-callback="yeetcar4">Forester(Compact SUV)</option>
-														</select>
-													</div>
-													<div data-conv-case="no">
-														<select name="goodby3" data-conv-question="See you later!">
-															<option value="reset" data-callback="reset">Goodbye</option>
-														</select>
-													</div>
-												</div>
-											</div>
-										</div>
+										<input onchange="HELLO()" type="text" name="name" data-conv-question="Hey! im your AutoBot here to help you out ;) CLICK ENTER" data-pattern="^[a-zA-Z]">
+										<input onchange="HELLO()" id="myInput" type="text" name="name" data-conv-question="Okay! Please, tell me your name first." data-pattern="^[a-zA-Z]">
+										<input onchange="HELLO()" type="text" name="name" data-conv-question="Okay! first. your a bucktee" data-pattern="^[a-zA-Z]">
+										<input onchange="HELLO()" type="text" name="name" data-conv-question="Okay! now ya know #raman" data-pattern="^[a-zA-Z]">
 
-										<!-- Yes, Continue, Ask the Questions -->
-										<input type="text" name="age" data-conv-question="How old are you?" data-pattern="^[1-9]">
-										<input type="text" name="kilom" data-conv-question="How far do you travel on your daily commute?" data-pattern="^[1-9]">
-										<input type="text" name="num-people" data-conv-question="How many family members including yourself are in your household?" data-pattern="^[1-9]">
-										<input type="text" data-conv-question="Compiling your data." data-no-answer="true">
-										<input type="text" data-conv-question="Thank you!" data-no-answer="true">
-										<!-- Insert API thingy -->
-										
-										<!----------------------->
-
-										<!-- A Choice made from ML model and other data -->
-										<select name="ML-Choice" data-conv-question="I would reccomend this car!">
-											<option value="MLChoice" data-callback="MLChoice">Placeholder</option>
-										</select>
 									</form>
 								</div>
 							</div>
@@ -100,9 +34,34 @@
 				</div>
 			</div>
 		</section>
+
 <script type="text/javascript" src="{{ url_for('static', filename='plugin/min/jquery-3.4.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='plugin/min/autosize.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='plugin/jquery.convform.js') }}"></script>
 <script src="{{ url_for('static', filename='app.js') }}"></script>
+<script async>
+
+	function HELLO() {
+		var bucks = document.getElementById("userInput");
+		bucks.addEventListener("keyup", function(event) {
+		  event.preventDefault();
+		  if (event.keyCode === 13) {
+		   fetch('/add', {
+				method: 'post',
+				headers: {
+				  'Accept': 'application/json, text/plain, */*',
+				  'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({score: document.getElementById("messages").innerText})
+				}).then(function (response) {
+					return response.text();
+				}).then(function (text) {
+			
+				});
+		  }
+		});
+		}
+
+</script>
 </body>
 </html>

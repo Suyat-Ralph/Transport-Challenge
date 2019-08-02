@@ -20,20 +20,23 @@ def results():
     if action == "best":
         selling = str(data_clean.get_best_selling(df))
         print(selling)
-        return {'fulfillmentText':"The best selling car is " + selling.split(":")[0][0].capitalize() + selling.split(":")[0][1:] + " with " + selling.split(":")[1] \
+        return {'fulfillmentText': "Our best selling car is " + selling.split(":")[0][0].capitalize() + selling.split(":")[0][1:] + " with " + selling.split(":")[1] \
                                   + " trim."}
     elif action == "popular":
         popular = str(data_clean.get_most_popular(df))
         print(popular, type(popular))
         # build a request object
         # return a fulfillment response
-        return {'fulfillmentText': popular}
+        return {'fulfillmentText': "Our most popular car is " + popular.capitalize()}
+
 
 # create a route for webhook
 @app.route('/webhook', methods=['GET', 'POST'])
 def webhook():
     # return response
     return make_response(jsonify(results()))
+
+
 # run the app
 if __name__ == '__main__':
    app.run()

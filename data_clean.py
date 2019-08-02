@@ -45,6 +45,6 @@ def get_most_popular(df):
     return df.index[0]
 
 
-# if __name__ == "__main__":
-#     get_best_selling(initial())
-#     get_most_popular(initial())
+if __name__ == "__main__":
+    get_best_selling(initial())
+    print(get_most_popular(initial()))

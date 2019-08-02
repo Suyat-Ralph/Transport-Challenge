@@ -24,3 +24,6 @@ section#demo {
     box-shadow: 13px 13px 28px 2px rgba(0, 0, 0, 0.25);
     padding: 7px 15px;
 }
+#bot-demo {
+    text-align:center;
+}

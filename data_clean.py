@@ -18,21 +18,33 @@ def initial():
     df = df[df["Page Type"] != "homepage"]
     # print(df.compute())
 
-    #print(df.compute())
+    return df
+
+
+def get_best_selling(df):
+    """
+    :return: the best selling car
+    """
+
+    # print(df.compute())
     df = df.groupby("Vehicle Model Name/Trim")["Configuration Complete"].sum().compute().nlargest(20)
-    plt.style.use('dark_background')
-    plt.xticks(fontsize = 5, rotation=90)
-    plt.plot(df)
-    plt.show()
+    # plt.style.use('dark_background')
+    # plt.xticks(fontsize = 5, rotation=90)
+    # plt.plot(df)
+    # plt.show()
+
+    return df.index[0]
 
 
-    # print(df.compute())
-    print(df.groupby("Vehicle Model Name/Trim")["Page Views"].sum().compute().nlargest(20))
-    # print(df.compute())
+def get_most_popular(df):
+    """
+    :return: the most popular car
+    """
+    df = df.groupby("Vehicle Model Name/Trim")["Page Views"].sum().compute().nlargest(20)
 
-    first = df[df["Visit Number"] <= mean_visit]
-    second = df[df["Visit Number"] > mean_visit]
+    return df.index[0]
 
 
-if __name__ == "__main__":
-    initial()
+# if __name__ == "__main__":
+#     get_best_selling(initial())
+#     get_most_popular(initial())

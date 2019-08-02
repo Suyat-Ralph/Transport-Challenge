@@ -12,28 +12,14 @@
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-	<section id="demo">
-			<div class="vertical-align">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-6 col-sm-offset-3 col-xs-offset-0">
-							<div class="card no-border">
-								<div id="chat" class="conv-form-wrapper">
-									<form class="hidden" method="get">
-
-										<input onchange="HELLO()" type="text" name="name" data-conv-question="Hey! im your AutoBot here to help you out ;) CLICK ENTER" data-pattern="^[a-zA-Z]">
-										<input onchange="HELLO()" id="myInput" type="text" name="name" data-conv-question="Okay! Please, tell me your name first." data-pattern="^[a-zA-Z]">
-										<input onchange="HELLO()" type="text" name="name" data-conv-question="Okay! first. your a bucktee" data-pattern="^[a-zA-Z]">
-										<input onchange="HELLO()" type="text" name="name" data-conv-question="Okay! now ya know #raman" data-pattern="^[a-zA-Z]">
-
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+	<div id="bot-demo">
+		<iframe
+			allow="microphone;"
+			width="350"
+			height="430"
+			src="https://console.dialogflow.com/api-client/demo/embedded/965f8640-778a-4b77-a4a7-0e32b8c74cfc">
+		</iframe>
+	</div>
 
 <script type="text/javascript" src="{{ url_for('static', filename='plugin/min/jquery-3.4.1.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='plugin/min/autosize.min.js') }}"></script>

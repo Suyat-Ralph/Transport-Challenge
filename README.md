@@ -17,7 +17,10 @@ JavaScript
 
 Python
 - Dask
-- NLTK
+- Flask
+
+DialogFlow
+- ngrok
 
 AWS
 ```

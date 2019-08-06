@@ -13,6 +13,7 @@ def results():
     req = request.get_json(force=True)
     # fetch action from json
     action = req.get('queryResult').get('parameters')
+    actionYes = req.get('queryResult').get('action')
     action = str(list(action.keys())[0])
     print(action)
 
@@ -21,13 +22,16 @@ def results():
         selling = str(data_clean.get_best_selling(df))
         print(selling)
         return {'fulfillmentText': "Our best selling car is " + selling.split(":")[0][0].capitalize() + selling.split(":")[0][1:] + " with " + selling.split(":")[1] \
-                                  + " trim."}
+                                  + " trim." }
     elif action == "popular":
         popular = str(data_clean.get_most_popular(df))
         print(popular, type(popular))
         # build a request object
         # return a fulfillment response
         return {'fulfillmentText': "Our most popular car is " + popular.capitalize()}
+
+    if actionYes == "webhook.startConfig-bestSellingCar-yes":
+        return {'fulfillmentText': "Great"}
 
 
 # create a route for webhook

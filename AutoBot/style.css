@@ -29,6 +29,7 @@ body {
     height: 100vh;
     background-image: url("car.png");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 #bot-demo {
     width: 100%;
@@ -44,7 +45,7 @@ iframe {
     margin: 20px;
     height: 80%;
 }
-@media (min-width: 1050px) {
+/*@media (min-width: 1050px) {
     body {
         background-size: contain;
     }
@@ -53,7 +54,7 @@ iframe {
     body {
         background-size: inherit;
     }
-}
+}*/
 
 
 
